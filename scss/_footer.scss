@@ -1,0 +1,51 @@
+.footer{
+    width: 100%;
+    background: $darkBlueBackground03;
+    padding-top: 8.5rem;
+    &__inner{
+        padding-bottom: 9.5rem;
+    }
+    &__content{
+        color: $white;
+        margin-top: 4rem;
+        div:first-child{
+            flex: 0.4;
+            @include flexbox();
+            flex-wrap: nowrap;
+            p{
+                margin-left: 3rem;
+            }
+        }
+        ul:last-child{
+            @include flexbox();
+            flex-wrap: nowrap;
+            li{
+                cursor: pointer;
+                height: 30px;
+                width: 30px;
+                line-height: 30px;
+                border-radius: 50%;
+                border: 1px solid $white;
+                text-align: center;
+                margin-right: 10px;
+            }
+        }
+        @include flexbox(flex-start,space-between);
+    }
+   li{
+    margin-bottom: 2rem;
+   }
+    &__desc{
+        @include flexbox();
+    }
+    &__info{
+        flex-wrap: nowrap;
+        span{
+            @include flexbox();
+            margin-bottom: 2rem;
+            img{
+                margin-right: 3rem;
+            }
+        }
+    }
+}

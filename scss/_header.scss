@@ -1,0 +1,20 @@
+.header{
+    padding-top: 7rem;
+    font-family: 'Raleway', sans-serif;
+    &__inner{
+        @include flexbox(center,space-between);
+    }
+    &__logo{
+        background: #000;
+        display: block;
+        height: 100px;
+    }
+    &__menu{
+        &-list{
+            @include flexbox();
+        }
+        &-item{
+            margin-left: 5.5rem;
+        }
+    }
+}

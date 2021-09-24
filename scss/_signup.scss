@@ -1,0 +1,44 @@
+.signUp{
+    position: relative;
+    height: 11.5rem;
+    background: $darkBlueBackground03;
+    &__inner{
+        position: absolute;
+        top:-16rem;
+        left: 50%;
+        max-width: 90rem;
+        width: 100%;
+        padding: 6rem 7.5rem 4rem 7.5rem;
+        transform: translateX(-50%);
+        color: $white;
+        text-align: center;
+        background: $darkBlueBackground04;
+    }
+    &__title{
+        margin-bottom: 3.6rem;
+    }
+    &__desc{
+        margin-bottom: 4rem;
+    }
+    &__started{
+        display: flex;
+        gap: 2rem;
+        input{
+            padding: 2rem 4rem 2rem;
+            flex: 0.75;
+            border-radius: 5rem;
+            outline: none;
+            border: 0;
+        }
+        button{
+            flex: 0.25;
+            outline: none;
+            padding: 2rem 4rem 2rem;
+            border: 0;
+            background: linear-gradient(to right,$cyan,$blue);
+            border-radius: 10rem;
+            color: $white;
+            font-weight: 700;
+        }
+    }
+}

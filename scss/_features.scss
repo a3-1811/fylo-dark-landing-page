@@ -1,0 +1,28 @@
+.features{
+    background: $darkBlueBackground02;
+    padding-bottom: 13.5rem;
+    &__list{
+        @include flexbox(stretch,center);
+        gap: 4rem;
+    }
+    &__item{
+        color: $white;
+        max-width: 380px;
+        @include flexbox(center,center,wrap,column);
+        text-align: center;
+    }
+    &__icon{
+        height: 80px;
+        margin-bottom: 4.2rem;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__title{
+        margin-bottom: 2rem;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+}
