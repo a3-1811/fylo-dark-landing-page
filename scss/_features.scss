@@ -1,15 +1,21 @@
 .features{
     background: $darkBlueBackground02;
     padding-bottom: 13.5rem;
+    @include breakpoints-down(small){
+        padding-bottom: 30rem;
+      }
     &__list{
         @include flexbox(stretch,center);
-        gap: 4rem;
+        gap: 10rem;
     }
     &__item{
         color: $white;
         max-width: 380px;
         @include flexbox(center,center,wrap,column);
         text-align: center;
+        @include breakpoints-down(small){
+           max-width: 100%;
+         }
     }
     &__icon{
         height: 80px;
@@ -19,10 +25,18 @@
             width: 100%;
             object-fit: cover;
         }
+        @include breakpoints-down(small){
+            margin-bottom: 6rem;
+            height: 125px;
+         }
     }
     &__title{
         margin-bottom: 2rem;
         font-weight: 700;
         font-size: 2rem;
+        @include breakpoints-down(small){
+            font-size: 4rem;
+            margin-bottom: 3.5rem;
+         }
     }
 }

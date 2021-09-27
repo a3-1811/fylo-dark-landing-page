@@ -2,6 +2,9 @@
     position: relative;
     height: 11.5rem;
     background: $darkBlueBackground03;
+    @include breakpoints-down(small){
+        height: 70rem;
+     }
     &__inner{
         position: absolute;
         top:-16rem;
@@ -13,22 +16,40 @@
         color: $white;
         text-align: center;
         background: $darkBlueBackground04;
+        @include breakpoints-down(small){
+            max-width: calc(100% - 8rem);
+            padding: 10rem 6rem;
+         }
     }
     &__title{
         margin-bottom: 3.6rem;
+        @include breakpoints-down(small){
+            font-size: 4rem;
+          }
     }
     &__desc{
         margin-bottom: 4rem;
+        @include breakpoints-down(small){
+            font-size: 2.8rem;
+          }
     }
     &__started{
         display: flex;
         gap: 2rem;
+        @include breakpoints-down(small){
+           flex-direction: column;
+           gap: 5rem;
+         }
         input{
             padding: 2rem 4rem 2rem;
             flex: 0.75;
             border-radius: 5rem;
             outline: none;
             border: 0;
+            @include breakpoints-down(small){
+                padding: 3.5rem 6rem;
+                font-size: 2rem;
+              }
         }
         button{
             flex: 0.25;
@@ -39,6 +60,10 @@
             border-radius: 10rem;
             color: $white;
             font-weight: 700;
+            @include breakpoints-down(small){
+                padding: 4rem 0;
+                font-size: 2rem;
+              }
         }
     }
 }

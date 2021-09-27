@@ -3,6 +3,9 @@
     background-position: bottom;
     padding-bottom: 12rem;
     background-size: 100% 42rem;
+    @include breakpoints-down(small){
+        background-size: 100% 25rem;
+    }
 }
 .intro{
     color: $white;
@@ -17,6 +20,10 @@
         font-size: 3.4rem;
         margin-bottom: 4.5rem;
         font-weight: 700;
+        @include breakpoints-down(small){
+            font-size: 5rem;
+            margin-bottom: 6.5rem;
+         }
     }
     &__desc{
         text-align: center;
@@ -24,5 +31,9 @@
         margin-bottom: 4rem;
         font-weight: 400;
         max-width: 50rem;
+        @include breakpoints-down(small){
+            font-size: 2rem;
+            margin-bottom: 7.5rem;
+         }
     }
 }

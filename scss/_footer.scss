@@ -2,8 +2,21 @@
     width: 100%;
     background: $darkBlueBackground03;
     padding-top: 8.5rem;
+    @include breakpoints-down(small){
+        padding-top: 0rem;
+     }
     &__inner{
         padding-bottom: 9.5rem;
+        .logo{
+            @include breakpoints-down(small){
+                display: block;
+                height: 100px;
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                }
+             }
+        }
     }
     &__content{
         color: $white;
@@ -15,6 +28,9 @@
             p{
                 margin-left: 3rem;
             }
+            @include breakpoints-down(small){
+               margin-bottom: 5rem;
+             }
         }
         ul:last-child{
             @include flexbox();
@@ -28,12 +44,33 @@
                 border: 1px solid $white;
                 text-align: center;
                 margin-right: 10px;
+                @include breakpoints-down(small){
+                    height: 50px;
+                    width: 50px;
+                    line-height: 50px;
+                  }
             }
+            @include breakpoints-down(small){
+                width: 100%;
+               justify-content: center
+              }
+           
         }
         @include flexbox(flex-start,space-between);
+        @include breakpoints-down(small){
+            flex-direction: column;
+         }
+    }
+    ul{
+        @include breakpoints-down(small){
+            margin-top: 15rem;
+          }
     }
    li{
     margin-bottom: 2rem;
+    @include breakpoints-down(small){
+       font-size: 3rem;
+      }
    }
     &__desc{
         @include flexbox();

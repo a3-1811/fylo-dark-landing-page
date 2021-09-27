@@ -1,6 +1,9 @@
 .header{
     padding-top: 7rem;
     font-family: 'Raleway', sans-serif;
+    @include breakpoints-down(small){
+        padding-top: 5rem;
+    }
     &__inner{
         @include flexbox(center,space-between);
     }
@@ -8,6 +11,9 @@
         background: #000;
         display: block;
         height: 100px;
+        @include breakpoints-down(small){
+            height: 50px;
+        }
     }
     &__menu{
         &-list{
@@ -15,6 +21,10 @@
         }
         &-item{
             margin-left: 5.5rem;
+            @include breakpoints-down(small){
+                font-size: 2rem;
+                font-weight: 400;
+            }
         }
     }
 }
