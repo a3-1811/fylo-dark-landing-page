@@ -211,7 +211,7 @@ img {
 }
 
 .wrapper-intro {
-  background: url(/images/bg-curvy-desktop.svg) no-repeat;
+  background: url(./../../images/bg-curvy-desktop.svg) no-repeat;
   background-position: bottom;
   padding-bottom: 12rem;
   background-size: 100% 42rem;
@@ -219,7 +219,9 @@ img {
 
 @media (max-width: 74.89rem) {
   .wrapper-intro {
-    background-size: 100% 25rem;
+    background: url(./../../images/bg-curvy-mobile.svg) no-repeat;
+    background-position: bottom;
+    background-size: 100% 35rem;
   }
 }
 
